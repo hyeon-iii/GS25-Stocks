@@ -1,0 +1,489 @@
+/* =========================
+   기본 설정
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:
+        "Noto Sans KR",
+        "맑은 고딕",
+        sans-serif;
+}
+
+
+body{
+
+    background:#f3f5f7;
+
+    padding:30px;
+
+    color:#333;
+
+}
+
+
+
+/* =========================
+   전체 컨테이너
+========================= */
+
+.container{
+
+    max-width:1000px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:
+    0 5px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* 제목 */
+
+h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#222;
+
+}
+
+
+
+h2{
+
+    margin:20px 0 15px;
+
+    color:#333;
+
+    font-size:20px;
+
+}
+
+
+
+
+
+/* =========================
+   입력 영역
+========================= */
+
+.input-box{
+
+    display:flex;
+
+    gap:10px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:15px;
+
+}
+
+
+
+input{
+
+    padding:12px;
+
+    border:
+
+    1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+}
+
+
+
+input:focus{
+
+    outline:none;
+
+    border-color:#2878ff;
+
+}
+
+
+
+#product{
+
+    flex:2;
+
+}
+
+
+
+#expire{
+
+    flex:1;
+
+}
+
+
+
+
+
+/* =========================
+   버튼
+========================= */
+
+
+button{
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 20px;
+
+    background:#2878ff;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:0.2s;
+
+}
+
+
+
+button:hover{
+
+    background:#145bd1;
+
+}
+
+
+
+.delete{
+
+    background:#ff4d4d;
+
+    padding:8px 14px;
+
+}
+
+
+
+.delete:hover{
+
+    background:#c90000;
+
+}
+
+
+
+
+
+/* =========================
+   검색
+========================= */
+
+#search{
+
+    width:100%;
+
+    margin:15px 0;
+
+}
+
+
+
+
+
+/* =========================
+   통계
+========================= */
+
+
+.summary{
+
+    background:#f8f9fa;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    margin-bottom:20px;
+
+    font-weight:bold;
+
+    color:#444;
+
+}
+
+
+
+
+
+/* =========================
+   테이블
+========================= */
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:20px;
+
+}
+
+
+
+thead{
+
+    background:#2878ff;
+
+    color:white;
+
+}
+
+
+
+th{
+
+    padding:13px;
+
+    text-align:center;
+
+}
+
+
+
+td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border-bottom:
+
+    1px solid #ddd;
+
+}
+
+
+
+
+
+tbody tr:hover{
+
+    background:#f7f7f7;
+
+}
+
+
+
+
+
+/* =========================
+   상태 표시
+========================= */
+
+
+/* 판매 가능 */
+
+.normal{
+
+    background:#d4edda;
+
+    color:#176b2c;
+
+    font-weight:bold;
+
+}
+
+
+
+/* 24시간 이내 */
+
+.warning{
+
+    background:#fff3cd;
+
+    color:#856404;
+
+    font-weight:bold;
+
+}
+
+
+
+/* 폐기 */
+
+.expired{
+
+    background:#ffd6d6;
+
+    color:#b30000;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/* =========================
+   폐기 기록 영역
+========================= */
+
+
+#history tr td{
+
+    background:#fafafa;
+
+}
+
+
+
+#history tr:hover td{
+
+    background:#fff0f0;
+
+}
+
+
+
+
+
+/* =========================
+   구분선
+========================= */
+
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#ddd;
+
+    margin:25px 0;
+
+}
+
+
+
+
+
+/* =========================
+   하단 설명
+========================= */
+
+
+footer{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#888;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+
+/* =========================
+   모바일 대응
+========================= */
+
+
+@media(max-width:700px){
+
+
+    body{
+
+        padding:10px;
+
+    }
+
+
+
+    .container{
+
+        padding:20px;
+
+    }
+
+
+
+    .input-box{
+
+        flex-direction:column;
+
+    }
+
+
+
+    #product,
+    #expire{
+
+        width:100%;
+
+    }
+
+
+
+    button{
+
+        width:100%;
+
+    }
+
+
+
+    table{
+
+        font-size:12px;
+
+    }
+
+
+
+    th,
+    td{
+
+        padding:8px 5px;
+
+    }
+
+
+
+    h1{
+
+        font-size:22px;
+
+    }
+
+
+}
